@@ -1,0 +1,40 @@
+.inner-launch-item {
+  background: #fff;
+
+  img {
+    background: #e8dcdc;
+    width: 17em;
+  }
+
+  li,
+  p {
+    color: #98afc7;
+  }
+
+  .launch-title {
+    color: #2b65ec;
+  }
+  
+  @media (max-width: 767px) {
+    img {
+      width: 16em;
+    }
+  }
+  .mission-id{
+    margin-left: 12px;
+  }
+}
+.centeralign{
+  justify-self: center;
+}
+@media screen and (min-width: 700px) {
+  .launch-item {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .launch-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

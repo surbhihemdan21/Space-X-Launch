@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: #d3d3d3;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.space-grid {
+  display: grid;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.common-margin {
+  margin: 0.5em;
+}
+
+.spacelaunch {
+  margin-left: 0.2em;
+}
+@media (max-width: 767px) {
+  .spacelaunch {
+    margin-left: 1em;
+  }
+}
+
+
+.margintop {
+  margin-top: 0.5;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.common-padding {
+  padding: 1em;
+}
+
+.padtop {
+  padding-top: 0.4em;
+}
+
+.padleft {
+  padding-left: 0.5em;
+}
+
+.c-fit-width {
+  width: fit-content;
+}

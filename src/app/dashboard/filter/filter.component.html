@@ -1,0 +1,45 @@
+<nav class="space-grid container common-margin c-fit-width">
+  <h3 class="margintop align-center">Filters</h3>
+  <div class="sub-header margintop no-margin c-fit-width">Launch Year</div>
+  <span class="space-grid">
+    <div *ngFor="let year of years">
+      <button
+        class="non-filter-year"
+        [ngClass]="{
+          'filtered-year': year.isSelected || year.value == appliedYear
+        }"
+        (click)="applyFilter('years', year, 'appliedYear')"
+      >
+        {{ year.value }}
+      </button>
+    </div>
+  </span>
+  <div class="sub-header margintop no-margin c-fit-width">Successful Launch</div>
+  <span class="space-grid">
+    <div *ngFor="let launch of launchValues">
+      <button
+        class="non-filter-year"
+        [ngClass]="{
+          'filtered-year': launch.isSelected || launch.value == isLaunched
+        }"
+        (click)="applyFilter('launchValues', launch, 'isLaunched')"
+      >
+        {{ launch.value }}
+      </button>
+    </div>
+  </span>
+  <div class="sub-header margintop no-margin c-fit-width">Successful Landing</div>
+  <span class="space-grid">
+    <div *ngFor="let landing of landingValues">
+      <button
+        class="non-filter-year"
+        [ngClass]="{
+          'filtered-year': landing.isSelected || landing.value == isSuccesfullyLanded
+        }"
+        (click)="applyFilter('landingValues', landing, 'isSuccesfullyLanded')"
+      >
+        {{ landing.value }}
+      </button>
+    </div>
+  </span>
+</nav>
