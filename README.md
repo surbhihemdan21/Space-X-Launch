@@ -13,7 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - The app is followed with server side rendering.
 - For fetching the data, simple http methods used with few required query parameters.
 - And the app targeted for mobile and desktop views.
-
+ 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
